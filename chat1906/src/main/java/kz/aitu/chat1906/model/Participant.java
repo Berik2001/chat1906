@@ -16,6 +16,8 @@ public class Participant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "user_id")
     private Long user_id;
+    @Column(name = "chat_id")
     private Long chat_id;
 }
